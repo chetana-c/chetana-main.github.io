@@ -871,22 +871,24 @@ main {
 
 /* .skills-list { padding: 20px; } */
 
-/* Adjust the padding and margin for the skills list items */
-.skills-list .skills-item {
+.skills-item {
   margin-bottom: 20px; /* Increase the margin to create more space between items */
-  padding-left: 50px;  /* Add left padding to keep content within the box */
+  padding-left: 50px; /* Add left padding to keep content within the box */
 }
 
-/* Apply styles to the nested skill lists */
 .skills-list .skills-item .skill-list ul {
-  margin: 0;           /* Remove default margin */
-  padding-left: 50px;  /* Add left padding for nested lists */
-  list-style: none;    /* Remove default list bullets */
+  margin: 0; /* Remove default margin */
+  padding-left: 30px; /* Add left padding for nested lists */
+  list-style: none; /* Remove default list bullets */
 }
 
 .skills-list .skills-item .skill-list ul li {
-  margin-bottom: 5px;  /* Add space between nested list items */
+  margin-bottom: 5px; /* Add space between nested list items */
+  position: relative;
+  left: 10px; 
 }
+
+
 
 .skills-item:not(:last-child) { margin-bottom: 15px; }
 
