@@ -294,7 +294,7 @@ article.active {
 
 .content-card .skills-item {
   margin-bottom: 20px; /* Increase the margin to create more space between items */
-  padding-left: 20px;  /* Add left padding to keep content within the box */
+  padding-left: -20px;  /* Add left padding to keep content within the box */
 }
 
 /* Apply styles to the nested skill lists */
