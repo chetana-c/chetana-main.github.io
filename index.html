@@ -1,1200 +1,396 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Rajendra Thottempudi</title>
+    
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+    <meta name="author" content="Rajendra Thottempudi">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Rajendra Thottempudi">
+    <meta name="keywords" content="Rajendra Thottempudi">
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="stylesheet.css"> -->
 </head>
-
-<body>
-
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Richard hanrick</h1>
-
-          <p class="title">Web developer</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">June 23, 1982</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Sacramento, California, USA</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
-          </p>
-
-          <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-
-                <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
+<body class="bg_colour">
+
+    <table border=0 class="bg_colour" style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr style="padding:0px">
+            <td style="padding:0px">
+
+                <nav class="navbar navbar-default" style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Rajendra Thottempudi</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#experience">Work Experience</a></li>
+                    <li><a href="#teaching">Teaching</a></li>
+                    <li><a href="#awards">Awards</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="https://www.linkedin.com/in/rajendra-thottempudi/">LinkedIn</a></li>
+                    <li><a href="mailto:rajendra.thottempudi@tamu.edu">Email</a></li>
+                </ul>
+                </div>
+                </nav>
+
+                <!-- Name tab -->
+                <table border=0 class="bg_colour" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+                    
+                    <tr style="padding:0px">
+                        <td style="padding:2.5%;width:20%;max-width:20%">
+                            <a href="./images/rajendra-logo.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/rajendra-logo.jpg" class="img-circle"></a>
+                        </td>
+                        <td style="padding:2.5%;width:60%;vertical-align:middle">
+                            <p style="text-align:center">
+                                <h1  style="text-align:center"><name>Rajendra Thottempudi</name></h1>
+                            </p>
+                            <p style="text-align:center">
+                            <p>I am a graduate student at
+                                <a href="https://www.tamu.edu/" target="_blank">Texas A&M University
+                                </a> where I'm pursuing my MS in Computer Science. I did my undergrad in Electronics and Communication Engineering from <a href="https://www.iitr.ac.in/" target="_blank">Indian Institute of Technology, Roorkee.</a>
+                            </p>
+
+                        </td>
+                        <td style="padding:2.5%;width:10%;max-width:10%">
+                        </td>
+                    </tr>
+                </tbody></table>
+
+                <hr class="soft">
+<!-- News -->
+
+                <!-- <br> -->
+                <button style="border:0px transparent; background-color: transparent;outline:none;"type="button" class="collapsible" data-toggle="collapse" data-target="#content-news" id="news"><heading>News</heading></button>
+                <!-- <div class="container"> -->
+                <div id="content-news" class="collapse in">
+                <!-- <div class="scroll">  -->
+
+                <table border=0 class="bg_colour" style="padding:10px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+                    <tr>
+                        <td>
+                            <p style="color:darkblue; display:inline">June '23 &nbsp;</p>
+                        </td>
+                        <td>
+                            I started my internship at Department of Information Technology as an Application Developer!
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p style="color:darkblue; display:inline">Jan'23 &nbsp;</p>
+                        </td>
+                        <td>
+                            Started working as a Teaching Assistant for Department of Computer Science.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="color:darkblue; display:inline">September '22 &nbsp;</p>
+                        </td>
+                        <td>
+                            Started Working as a Graduate Assistant at Department of Information Technology, Texas A&amp;M.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p style="color:darkblue; display:inline">August '22 &nbsp;</p>
+                        </td>
+                        <td>
+                            I started grad school at A&amp;M!
+                        </td>
+                    </tr>
+                </tbody></table>
+                </div>
+                <hr class="soft">
+                
+
+<!-- Experience -->
+
+                <button style="border:0px transparent; background-color: transparent;outline:none;"type="button" class="collapsible" data-toggle="collapse" data-target="#content-experience" id="experience"><heading>Work Experience</heading></button>
+                <div id="content-experience" class="collapse in">
+
+                <table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+                    <tr>
+                        <td style="padding:10px;width:25%;vertical-align:middle">
+                            <div class="one">
+                                <img src='images/doit-logo.png' width="120">
+                            </div>
+                        </td>
+                        <td style="padding:10px;width:75%;vertical-align:top">
+                            <papertitle style="color:gray"><big>Application Developer Intern</big> </papertitle> <papertitle ><big> | Department of Information Technology</big></papertitle>
+                            <br>
+                            June '23 - August '23
+                            <br>
+                            <br>
+                            <p>Leveraged PHP and Laravel to design and develop dynamic web apps for efficiently managing events in student organizations.</p>
+                            <p>Implemented dynamic update scripts to elevate data reliability and optimize system functionality throughout Texas A&M</p>
+                            <p>Successfully executed the migration of legacy PHP applications utilized by various campus departments to the Laravel Framework resulting in significant improvements in functionality enhancing overall user experience and system efficiency.</p>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding:0px;width:25%;vertical-align:middle">
+                            <div class="one">
+                                <img src='images/jpmc-logo.jpg' width="150">
+                            </div>
+                        </td>
+                        <td style="padding:10px;width:75%;vertical-align:top">
+                            <papertitle style="color:gray"><big>Software Engineer II</big> </papertitle> <papertitle ><big> | JP Morgan Chase</big></papertitle>
+                            <br>
+                            July '19 - July '22
+                            <br>
+                            <br>
+                            <p>Worked as a key member of the Onboarding Gateway Team in Corporate Technology. Led the design and implementation of highly stable, fast and scalable RESTful micro services in our gateway utilizing Java SpringBoot framework.</p>
+                            <p>Implemented essential features required for the development of our greenfield application such as OAuth 2.0-based authorisation, database schemas. Developed reusable code components, enhancing the application's foundational functionalities.</p>
+                            <p>Centralized critical business logic and rules with Drools Engine, facilitating agile updates from Product Owners. Achieved ~30% reduction in application's response times by reconfiguring Drools Engine into dedicated microservice, enhancing performance.</p>
+                            <p>Established CI/CD Jenkins pipelines to facilitate seamless deployments in different environments and implemented Blue Green deployment strategy resulting in reducing application downtime by ~90% and later adopted across multiple teams.</p>
+                            <p>Owned the Master Data Management System Tibco EBX, introduced essential workflows, improved version control and added features for easier data management. Identified and resolved bottlenecks in the application improving its performance by ~3x.</p>
+                            <p>Implemented Kafka as the messaging service, integrated it with upstream and downstream systems, managed clusters on cloud, created and maintained topics for channels and ensured reliable communication between systems.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding:10px;width:25%;vertical-align:middle">
+                            <div class="one">
+                                <img src='images/jpmc-logo.jpg' width="120">
+                            </div>
+                        </td>
+                        <td style="padding:10px;width:75%;vertical-align:top">
+                            <papertitle style="color:gray"><big>Software Engineering Intern</big> </papertitle> <papertitle ><big> | JP Morgan Chase</big></papertitle>
+                            <br>
+                            May '18 - July '18
+                            <br>
+                            <br>
+                            <p>Developed a text classification engine by clustering methods to help classify incoming logs onto
+                                various themes and integrated it with an alert tool to help fasten error detection process.</p>
+                            <p>Evaluated various capabilities of Splunk for logging and possible use cases of its Machine Learning
+                                capabilities by understanding and applying it on existing data.</p>
+                        </td>
+                    </tr>
+                </tbody></table>
+                </div>
+                <hr class="soft">
+                <button style="border:0px transparent; background-color: transparent;outline:none;"type="button" class="collapsible" data-toggle="collapse" data-target="#content-teaching" id="teaching"><heading>Teaching Experience</heading></button>
+                <div id="content-teaching" class="collapse in">
+
+                <table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+                    <tr>
+                        <td style="padding:0px;width:25%;vertical-align:middle">
+                            <div class="one">
+                                <img src='images/TAM-LogoBox.png' width="150">
+                            </div>
+                        </td>
+                        <td style="padding:10px;width:75%;vertical-align:top">
+                            <papertitle style="color:gray"><big>Graduate Teaching Assistant</big> </papertitle> <papertitle ><big> | Texas A&amp;M University</big></papertitle>
+                            <br>
+                            August '23 - December '22
+                            <br>
+                            <br>
+                            <p>Course : CSCE 629, Analysis of Algorithms, with instructor of record <a href="https://engineering.tamu.edu/cse/profiles/ajiang.html" target="_blank">Dr. Anxiao Jiang</a>.</p>
+                            <p>Course Description :  Concrete algorithm design and analysis; abstract models to analyze the complexity of problems; NP-Completeness; approximation and probabilistic algorithms. </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding:0px;width:25%;vertical-align:middle">
+                            <div class="one">
+                                <img src='images/TAM-LogoBox.png' width="150">
+                            </div>
+                        </td>
+                        <td style="padding:10px;width:75%;vertical-align:top">
+                            <papertitle style="color:gray"><big>Graduate Teaching Assistant</big> </papertitle> <papertitle ><big> | Texas A&amp;M University</big></papertitle>
+                            <br>
+                            Jan '23 - May '23
+                            <br>
+                            <br>
+                            <p>Course : CSCE 314, Programming Languages, with instructor of record <a href='https://engineering.tamu.edu/cse/profiles/hlee.html'>Prof. Hyunyoung Lee</a>.</p>
+                            <p>Course Description :  Exploration of the design space of programming languages via an in-depth study of two programming languages, one functional (Haskell) and one object-oriented (Java); focuses on idiomatic uses of each language and on features characteristic for each language. </p>
+                        </td>
+                    </tr>
+                </tbody></table>
                 </div>
 
-              </div>
-            </li>
+                <hr class="soft">
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+<!-- Awards -->
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
+                <button style="border:0px transparent; background-color: transparent;outline:none;"type="button" class="collapsible" data-toggle="collapse" data-target="#content-awards" id="awards"><heading>Awards</heading></button>
+                <div id="content-awards" class="collapse in">
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+                <table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
+                    <tr>
+                        <td style="padding:10px;width:25%;vertical-align:middle">
+                            <div class="one">
+                                <img src='images/TAM-LogoBox.png' width="150">
+                            </div>
+                        </td>
+                        <td style="padding:10px;width:75%;vertical-align:top">
+                            <papertitle style="color:gray"><big>Texas A&amp;M University</big> </papertitle> <papertitle ><big> | Department of Computer Science and Engineering Scholarship</big></papertitle>
+                            <br>
+                            August '23
+                            <br>
+                            <br>
+                            <p>$1010 department scholarship with an Instate Tuition Waiver of $5000.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding:10px;width:25%;vertical-align:middle">
+                            <div class="one">
+                                <img src='images/jpmc-logo.jpg' width="120">
+                            </div>
+                        </td>
+                        <td style="padding:10px;width:75%;vertical-align:top">
+                            <papertitle style="color:gray"><big>JP Morgan Chase</big> </papertitle> <papertitle ><big> | Employee of the Quarter</big></papertitle>
+                            <br>
+                            June '21
+                            <br>
+                            <br>
+                            <p>Recognised in APAC Recognition Scroll at JP Morgan Chase for my work in onboarding gateway.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding:10px;width:25%;vertical-align:middle">
+                            <div class="one">
+                                <img src='images/ncert-logo.jpg' width="120">
+                            </div>
+                        </td>
+                        <td style="padding:10px;width:75%;vertical-align:top">
+                            <papertitle style="color:gray"><big>NTSE Scholarship</big> </papertitle> <papertitle ><big> | National Council of Educational Research and Training, Government of India</big></papertitle>
+                            <br>
+                            Aug '15
+                            <br>
+                            <br>
+                            <p>Received NTSE Merit Scholarship for my performance in NTSE Exam and being in the top 1% in the country. 
+                                Received an amount of INR 25000 every year throughout my undergraduation.<a href="https://ncert.nic.in/national-talent-examination.php"> More about this award</a>.</p>
+                        </td>
+                    </tr>
+                </tbody></table>
+                </div>
+                <hr class="soft">
+
+<!-- Projects -->
+
+                <button style="border:0px transparent; background-color: transparent;outline:none;"type="button" class="collapsible" data-toggle="collapse" data-target="#content-projects" id="projects"><heading>Projects</heading></button>
+                <div id="content-projects" class="collapse in">
+
+                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+                    <tr>
+                        <td style="padding:20px;width:25%;vertical-align:middle">
+                            <div class="one">
+                                <img src='images/productrec-logo.jpg' width="120">
+                            </div>
+                        </td>
+                        <td style="padding:20px;width:75%;vertical-align:top">
+                            <papertitle><big> ProductRec - Ecommerce recommendation service</papertitle></big>
+                            <br>
+                            <p><em>CSCE 670: Information Storage and Retrieval<a href="https://rajendra1997.github.io/productRecISR/index.html" target="_blank">[link]</a><tab>Supervisor : <a href='https://engineering.tamu.edu/cse/profiles/jcaverlee.html'>Prof. James Caverlee.</a></em></p>
+                            <p>Developed a novel Graph Neural Network(GNN) based framework for related product recommendation.</p>
+                            <p>Provided personalized product recommendations using the user's search history, purchase history, and product similarities (Item-item collaborative filtering).</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding:20px;width:25%;vertical-align:middle">
+                            <div class="one">
+                                <img src='images/monitor-judge.png' width="120">
+                            </div>
+                        </td>
+                        <td style="padding:20px;width:75%;vertical-align:top">
+                            <papertitle><big>Code Judge - Programming Practice Website</papertitle></big>
+                            <br>
+                            <p><em>CSCE 606: Software Engineering Course Project <a href="https://github.com/rajendra1997/CSCE606_CodeJudge" target="_blank">[link]</a> <tab> Supervisor : <a href='https://engineering.tamu.edu/cse/profiles/ritchey-philip.html'>Prof. Philip Ritchey.</a></em></p>
+                            <p>Automated code judging system, like Codeforces, for A&amp;M students.</p>
+                            <p>Ruby on Rails with Postgres, deployed to Heroku via Docker image.</p>
+                            <p>Actively maintained, used for intro programming classes at A&amp;M.</p> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding:20px;width:25%;vertical-align:middle">
+                            <div class="one">
+                                <img src='images/filesystem-logo.png' width="120">
+                            </div>
+                        </td>
+                        <td style="padding:20px;width:75%;vertical-align:top">
+                            <papertitle><big>File System</papertitle></big>
+                            <br>
+                            <p><em>CSCE 611: Operating Systems   Supervisor :<a href="https://engineering.tamu.edu/cse/profiles/rbettati.html"> Prof. Riccardo Bettati</a></em></p>
+                            <p> Implemented dynamic memory allocation, utilizing page tables to translate physical addresses into virtual addresses.</p>
+                            <p> Employed FIFO and Round-Robin algorithms to manage multiple threads effectively and developed a simple file system supporting sequential access to a file.</p>
+                        </td>
+                    </tr>
+
+
+                </tbody></table>
                 </div>
 
-              </div>
-            </li>
+<!-- Service -->
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+                <button style="border:0px transparent; background-color: transparent;outline:none;"type="button" class="collapsible" data-toggle="collapse" data-target="#content-service" id="service"><heading>Service</heading></button>
+                <div id="content-service" class="collapse in">
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
+                <table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+                    <tr>
+                        <td style="padding:10px;width:25%;vertical-align:middle">
+                            <div class="one">
+                                <img src='images/campdiaries-logo.jpg' width="120">
+                            </div>
+                        </td>
+                        <td style="padding:10px;width:75%;vertical-align:top">
+                            <papertitle style="color:gray"><big>Lead Developer </big> </papertitle> <papertitle ><big> |Camp Diaries, NGO</big></papertitle>
+                            <br>
+                            September '19 - July '20
+                            <br>
+                            <br>
+                            <p>Worked for an NGO named Camp Diaries and built a website with a team of 4 developers to digitalize and record their day-to-day activities.</a></p>
+                        </td>
+                    </tr>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+                    <tr>
+                        <td style="padding:10px;width:25%;vertical-align:middle">
+                            <div class="one">
+                                <img src='images/iitr-logo.png' width="120">
+                            </div>
+                        </td>
+                        <td style="padding:10px;width:75%;vertical-align:top">
+                            <papertitle style="color:gray"><big>General Secretary, Alumni Affairs</big> </papertitle> <papertitle ><big> |Indian Institute of Technology Roorkee</big></papertitle>
+                            <br>
+                            May '18 - May '19
+                            <br>
+                            <br>
+                            <p>Elected as General Secretary for Alumni Affairs in the Student body, IIT Roorkee with an electorate of 8000+ students in 2018-19.</a></p>
+                        </td>
+                    </tr>
 
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
+                </tbody></table>
                 </div>
+                <hr class="soft">
+
+<!-- Misc -->
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <!-- <p>This website is a derivative of <a href="https://larenspear.github.io/" target="_blank">Laren Spear's website</a>.</p> -->
+                <!-- <p>Find the source code to my website <a href="https://github.com/larenspear/larenspear.github.io" target="_blank">here</a>.</p> -->
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p></p>
+                <a href="https://www.easycounter.com/"><img src="https://www.easycounter.com/counter.php?larenspear" border="0" alt="Web Counters"></a>
+            </td>
+        </tr>
+    </table>
 
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
-
-              <span>2007 — 2008</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
-
-              <span>2006 — 2007</span>
-
-              <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
-
-              <span>2002 — 2004</span>
-
-              <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Creative director</h4>
-
-              <span>2015 — Present</span>
-
-              <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Art director</h4>
-
-              <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
-    </div>
-
-  </main>
-
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
