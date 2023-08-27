@@ -814,10 +814,10 @@ main {
 }
 
 .bullet-points li::before {
-  content: "\2022";      /* Unicode character for a solid dot */
+  content: "•";          /* Custom bullet character */
   position: absolute;    /* Position the bullet using absolute positioning */
   left: -20px;           /* Adjust the left position to align with the content */
-  color: white;          /* Set the bullet color to white */
+  color: var(--light-gray);          /* Set the bullet color to white */
 }
 
 .timeline-item:not(:last-child)::before {
