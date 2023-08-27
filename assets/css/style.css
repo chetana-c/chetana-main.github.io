@@ -806,9 +806,11 @@ main {
 .bullet-points {
   list-style-type: disc; /* Use bullet points as list item markers */
   padding-left: 20px;    /* Add some left padding to the list items */
+  color: var(--light-gray);
 }
 .bullet-points li {
-  margin-bottom: 10px;   /* Add some space between list items */
+  margin-bottom: 10px;   /* Add some space between list items */	
+  color: var(--light-gray);
 }
 
 .timeline-item:not(:last-child)::before {
