@@ -869,24 +869,24 @@ main {
 
 .skills-title { margin-bottom: 20px; }
 
-/* .skills-list { padding: 20px; } */
+ /* .skills-list { padding: 20px; } */
 
-.skills-item {
-  margin-bottom: 20px; /* Increase the margin to create more space between items */
-  padding-left: 50px; /* Add left padding to keep content within the box */
-}
+/* .skills-item {
+  margin-bottom: 20px; /* Increase the margin to create more space between items 
+  padding-left: 50px; /* Add left padding to keep content within the box
+} 
 
 .skills-list .skills-item .skill-list ul {
-  margin: 0; /* Remove default margin */
-  padding-left: 30px; /* Add left padding for nested lists */
-  list-style: none; /* Remove default list bullets */
+  margin: 0; /* Remove default margin 
+  padding-left: 30px; /* Add left padding for nested lists
+  list-style: none; /* Remove default list bullets 
 }
 
 .skills-list .skills-item .skill-list ul li {
-  margin-bottom: 5px; /* Add space between nested list items */
+  margin-bottom: 5px; /* Add space between nested list items 
   position: relative;
   left: 10px; 
-}
+}  */
 
 
 
