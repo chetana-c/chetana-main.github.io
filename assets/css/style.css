@@ -292,7 +292,21 @@ article.active {
   z-index: -1;
 }
 
+.content-card .skills-item {
+  margin-bottom: 20px; /* Increase the margin to create more space between items */
+  padding-left: 20px;  /* Add left padding to keep content within the box */
+}
 
+/* Apply styles to the nested skill lists */
+.content-card .skills-item .skill-list ul {
+  margin: 0;           /* Remove default margin */
+  padding-left: 20px;  /* Add left padding for nested lists */
+  list-style: none;    /* Remove default list bullets */
+}
+
+.content-card .skills-item .skill-list ul li {
+  margin-bottom: 5px;  /* Add space between nested list items */
+}
 
 
 
