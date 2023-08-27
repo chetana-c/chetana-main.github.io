@@ -867,7 +867,8 @@ main {
  * skills 
  */
 
-.skills-title { margin-bottom: 20px; }
+.skills-title { margin-bottom: 20px; 
+	      color: var(--vegas-gold);}
 
  /* .skills-list { padding: 20px; } */
 
@@ -890,7 +891,9 @@ main {
 
 
 
-.skills-item:not(:last-child) { margin-bottom: 15px; }
+.skills-item:not(:last-child) { 
+	color: var(--light-gray);
+	margin-bottom: 15px; }
 
 .skill .title-wrapper {
   display: flex;
