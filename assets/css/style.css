@@ -802,14 +802,13 @@ main {
 }
 
 
-.timeline-bullet-points {
-  list-style-type: disc; /* Use 'disc' for default bullet points */
-  margin-left: 20px;     /* Adjust the left margin for the bullet points */
-  padding-left: 0;       /* Reset padding for the unordered list */
+/* Example CSS for the bullet-points class */
+.bullet-points {
+  list-style-type: disc; /* Use bullet points as list item markers */
+  padding-left: 20px;    /* Add some left padding to the list items */
 }
-
-.timeline-bullet-points li {
-  margin-bottom: 10px;   /* Add some spacing between individual bullet points */
+.bullet-points li {
+  margin-bottom: 10px;   /* Add some space between list items */
 }
 
 .timeline-item:not(:last-child)::before {
